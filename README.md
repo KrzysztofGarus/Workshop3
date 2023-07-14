@@ -6,7 +6,7 @@ CRUD app
 -----------------
 
 - Java
-- ItelliJ
+- IntelliJ
 - MVC
 - Maven
 - Tomcat
