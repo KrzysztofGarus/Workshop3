@@ -5,13 +5,13 @@ CRUD app
 
 -----------------
 
-Java
-ItelliJ
-MVC
-Maven
-Tomcat
-jsp
-servlets
-userDAO
-OOP
-MySQL
+- Java
+- ItelliJ
+- MVC
+- Maven
+- Tomcat
+- jsp
+- servlets
+- userDAO
+- OOP
+- MySQL
