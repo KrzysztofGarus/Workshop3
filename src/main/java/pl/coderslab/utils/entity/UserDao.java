@@ -40,7 +40,7 @@ public class UserDao {
         }
     }
 
-    public User read(int userId){
+    public static User read(int userId){
         try (Connection conn = DbUtil.getConnection()) {
             PreparedStatement statement = conn.prepareStatement(READ_USER_QUERY);
             statement.setInt(1,userId);
@@ -67,7 +67,7 @@ public class UserDao {
             e.printStackTrace();
         }
     }
-    public void delete(int userId) {
+    public static void delete(int userId) {
         try (Connection conn = DbUtil.getConnection()) {
             PreparedStatement statement = conn.prepareStatement(DELETE_USER_QUERY);
             statement.setInt(1, userId);
