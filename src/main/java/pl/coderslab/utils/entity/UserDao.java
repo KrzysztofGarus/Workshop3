@@ -16,7 +16,7 @@ public class UserDao {
     private static final String READ_ALL_USERS_QUERY = "SELECT * FROM users";
 
 
-    public String hashPassword(String password) {
+    public static String hashPassword(String password) {
         return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
@@ -55,7 +55,7 @@ public class UserDao {
             return null;
         }
     }
-    public void update(User user) {
+    public static void update(User user) {
         try (Connection conn = DbUtil.getConnection()) {
             PreparedStatement statement = conn.prepareStatement(UPDATE_USER_QUERY);
             statement.setString(1, user.getUserName());
